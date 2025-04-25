@@ -1,16 +1,63 @@
-<<<<<<< HEAD
-# React + Vite
+# 📊 Crypto Tracker Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Crypto Tracker Dashboard** is a responsive and dynamic web application built using **React.js** and **Redux Toolkit**. It simulates real-time cryptocurrency market behavior by continuously updating data like price, volume, and percentage changes. The app offers a clean UI and a data-rich experience for users interested in crypto tracking.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔄 **Live Simulated Updates** – Real-time updates of price, volume, and percentage changes every second.
+- 📈 **Sparkline Mini Charts** – Visual representation of asset price trends.
+- 🧾 **Crypto Data Table** – Displays detailed information including:
+  - Logo, name, and symbol
+  - Current price
+  - 1h, 24h, and 7d % changes
+  - Market cap and 24h volume
+  - Circulating and max supply
+- 🧮 **Summary Section** – Shows total assets, market cap, volume, and average price.
+- 📱 **Fully Responsive** – Works great on mobile, tablet, and desktop.
+- ✨ **Modern & Minimal UI** – Built using Tailwind CSS for styling.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# crypto-dashboard
->>>>>>> 8dd8a1d4e06eca29b53484f184e97237955d96bf
+---
+
+## 🛠️ Tech Stack
+
+- **React.js** – UI framework
+- **Redux Toolkit** – State management
+- **Tailwind CSS** – Styling and layout
+- **Recharts** – For sparkline mini-charts
+- **React Icons** – Icon set for visual appeal
+
+---
+
+## 📁 Folder Structure
+
+crypto-dashboard/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   │   └── (images, logos, etc.)
+│
+│   ├── components/
+│   │   ├── CryptoTable.jsx
+│   │   ├── SparklineChart.jsx
+│   │   └── (other reusable UI components)
+│
+│   ├── features/
+│   │   └── crypto/
+│   │       ├── cryptoSlice.js
+│   │       └── (any related logic like selectors or services)
+│
+│   ├── styles/
+│   │   └── sidebar.css
+│   │   └── (global or component-specific CSS/Tailwind overrides)
+│
+│   ├── App.jsx
+│   ├── main.jsx (or index.js)
+│   └── store.js (Redux store configuration)
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── vite.config.js (if you're using Vite)
